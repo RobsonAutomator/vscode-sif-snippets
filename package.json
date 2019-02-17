@@ -1,0 +1,41 @@
+{
+    "name": "sif-snippets",
+    "displayName": "SIF Snippets",
+    "description": "Sitecore Installation Framework snippets by Robert Senktas",
+    "version": "1.0.0",
+    "icon": "assets/sif-snippets.png",
+    "publisher": "robsonautomator",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+        "Sitecore",
+        "SIF",
+        "json",
+        "Snippets"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RobsonAutomator/vscode-sif-snippets"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "json",
+                "path": "./snippets/sif.json"
+            },
+            {
+                "language": "json",
+                "path": "./snippets/sif-tasks.json"
+            },
+            {
+                "language": "json",
+                "path": "./snippets/sif-configfunctions.json"
+            }
+        ]
+    }
+}
