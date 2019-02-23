@@ -1,6 +1,5 @@
 # vscode-sif-snippets
-Sitecore Install Extensions snippets
-
+Sitecore Installation Framework snippets.
 
 | Prefix  | Description  | 
 |---|---|
@@ -12,3 +11,5 @@ Sitecore Install Extensions snippets
 | sif-t | Inserts a task snippet |
 | sifc-{Configuration Function Name} | Inserts specified configuration function |
 | sift-{Task Name} | Inserts specified task |
+
+
