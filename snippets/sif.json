@@ -1,0 +1,969 @@
+{
+"Empty SIF Json": {
+		"scope": "json",
+		"prefix": "sif",
+		"body": [
+			"{",
+				"\t\"Parameters\": {},",
+				"\t\"Modules\" : [],",
+				"\t\"Variables\": {},",
+				"\t\"Tasks\" : {},",
+				"\t\"Register\" : {",
+"\t\t\"Tasks\" : {",
+"\t\t},",
+"\t\t\"ConfigFunction\" : {",
+"\t\t}",
+"\t}",
+			"}"
+		],
+		"description": "Creates an empty configuration for SIF"
+	},
+    "SIF includes" : {
+        "scope": "json",
+		"prefix": "sif-inc",
+		"body": [
+         "\"Includes\" : {",
+         "\t\"\" : {",
+         "\t\t\"Source\" : \"\"",
+         "\t}".
+         "}",
+        ],
+		"description": "Add includes"
+    },
+	"SIF parameter": {
+		"scope": "json",
+		"prefix": "sif-p",
+		"body": [
+			"\"\" : {",
+				"\t\"Type\": \"String\",",
+				"\t\"Description\": \"\"",
+			"}"
+		],
+		"description": "Creates an empty parameter."
+	},
+	"SIF parameter with default value": {
+		"scope": "json",
+		"prefix": "sif-pd",
+		"body": [
+			"\"\" : {",
+				"\t\"Type\": \"String\",",
+				"\t\"Description\": \"\",",
+				"\t\"DefaultValue\": \"\"",
+			"}"
+		],
+		"description": "Creates an empty parameter with default value."
+	},
+	"SIF parameter with a reference": {
+		"scope": "json",
+		"prefix": "sif-pr",
+		"body": [
+			"\"\" : {",
+				"\t\"Type\": \"String\",",
+				"\t\"Description\": \"\",",
+				"\t\"Reference\": \"\"",
+			"}"
+		],
+		"description": "Creates an empty parameter with a reference."
+	},
+	"SIF task" : {
+		"scope": "json",
+		"prefix": "sif-t",
+		"body": [
+			"\"\" : {",
+				"\t\"Type\": \"\",",
+				"\t\"Params\": {",
+				"\t\t\"\" : \"\"",
+				"\t},",
+			"}"
+		],
+		"description": "Creates a task."
+    },
+"Task AddWebFeatureSSL": {
+	"scope": "json",
+	"prefix": "sif-AddWebFeatureSSL",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"AddWebFeatureSSL\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-AddWebFeatureSSLTask\",",
+	"\t\"Params\": {",
+		"\t\t\"SiteName\" : \"\",",
+		"\t\t\"HostName\" : \"\",",
+		"\t\t\"ClientCertLocation\" : \"\",",
+		"\t\t\"OutputDirectory\" : \"\",",
+		"\t\t\"Password\" : \"\",",
+		"\t\t\"Port\" : \"\",",
+		"\t\t\"RootCertLocation\" : \"\",",
+		"\t\t\"RootCertName\" : \"\",",
+		"\t\t\"RootDnsName\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Creates and binds a certificate chain to a website."
+},
+"Function And": {
+	"scope": "json",
+	"prefix": "sifc-And",
+	"body": [
+		"\"[And( '${1:Values}' )]\"" 
+	],
+	"description": "Performs an AND operation on two or more values."
+},
+"Task AppPool": {
+	"scope": "json",
+	"prefix": "sif-AppPool",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"AppPool\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-AppPoolTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Name\" : \"\",",
+		"\t\t\"Properties\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Task to support the creation and modification of an IIS Application Pool."
+},
+"Function CheckInstalledSoftware": {
+	"scope": "json",
+	"prefix": "sifc-CheckInstalledSoftware",
+	"body": [
+		"\"[CheckInstalledSoftware( '${1:Name}','${2:Version}' )]\"" 
+	],
+	"description": "Determines if a program has been installed."
+},
+"Task Command": {
+	"scope": "json",
+	"prefix": "sif-Command",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"Command\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-CommandTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Path\" : \"\",",
+		"\t\t\"Arguments\" : \"\",",
+		"\t\t\"TaskName\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Task to support the execution of an arbitrary command."
+},
+"Function Concat": {
+	"scope": "json",
+	"prefix": "sifc-Concat",
+	"body": [
+		"\"[Concat( '${1:Values}' )]\"" 
+	],
+	"description": "Concatenate values within a configuration"
+},
+"Task Copy": {
+	"scope": "json",
+	"prefix": "sif-Copy",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"Copy\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-CopyTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Source\" : \"\",",
+		"\t\t\"Destination\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Task to support copying files or folders to a new location."
+},
+"Task CreateService": {
+	"scope": "json",
+	"prefix": "sif-CreateService",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"CreateService\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-CreateServiceTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Name\" : \"\",",
+		"\t\t\"Path\" : \"\",",
+		"\t\t\"Arguments\" : \"\",",
+		"\t\t\"StartupType\" : \"\",",
+		"\t\t\"Description\" : \"\",",
+		"\t\t\"DisplayName\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Creates a Windows service"
+},
+"Task DownloadFile": {
+	"scope": "json",
+	"prefix": "sif-DownloadFile",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"DownloadFile\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-DownloadFileTask\",",
+	"\t\"Params\": {",
+		"\t\t\"SourceUri\" : \"\",",
+		"\t\t\"DestinationPath\" : \"\",",
+		"\t\t\"LoginSession\" : \"\",",
+		"\t\t\"Credentials\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Task to support the downloading of files from the Internet."
+},
+"Task EnsurePath": {
+	"scope": "json",
+	"prefix": "sif-EnsurePath",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"EnsurePath\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-EnsurePathTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Clean\" : \"\",",
+		"\t\t\"Exists\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Creates paths or cleans existing paths."
+},
+"Function Environment": {
+	"scope": "json",
+	"prefix": "sifc-Environment",
+	"body": [
+		"\"[Environment( '${1:Name}' )]\"" 
+	],
+	"description": "Supports referencing of environment variables in configurations"
+},
+"Function Equal": {
+	"scope": "json",
+	"prefix": "sifc-Equal",
+	"body": [
+		"\"[Equal( '${1:LeftOperand}','${2:RightOperand}' )]\"" 
+	],
+	"description": "Returns true or false based on the equality of two values."
+},
+"Task FilePermissions": {
+	"scope": "json",
+	"prefix": "sif-FilePermissions",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"FilePermissions\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-FilePermissionsTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Path\" : \"\",",
+		"\t\t\"Rights\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Sets file permissions for a path"
+},
+"Function GetCertificate": {
+	"scope": "json",
+	"prefix": "sifc-GetCertificate",
+	"body": [
+		"\"[GetCertificate( '${1:Id}','${2:CertStorePath}' )]\"" 
+	],
+	"description": "Returns the certificate for the given name or thumbprint under a certificate path."
+},
+"Function GetCertificateThumbprint": {
+	"scope": "json",
+	"prefix": "sifc-GetCertificateThumbprint",
+	"body": [
+		"\"[GetCertificateThumbprint( '${1:Id}','${2:CertStorePath}' )]\"" 
+	],
+	"description": "Returns the thumbprint for the requested certificate."
+},
+"Task HostHeader": {
+	"scope": "json",
+	"prefix": "sif-HostHeader",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"HostHeader\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-HostHeaderTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Hostname\" : \"\",",
+		"\t\t\"IPAddress\" : \"\",",
+		"\t\t\"Action\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Performs the action over the entry in the system hosts file."
+},
+"Task HttpRequest": {
+	"scope": "json",
+	"prefix": "sif-HttpRequest",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"HttpRequest\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-HttpRequestTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Uri\" : \"\",",
+		"\t\t\"Action\" : \"\",",
+		"\t\t\"ContentType\" : \"\",",
+		"\t\t\"Parameters\" : \"\",",
+		"\t\t\"ExpectedStatusCode\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Task to support making requests over the Internet."
+},
+"Function If": {
+	"scope": "json",
+	"prefix": "sifc-If",
+	"body": [
+		"\"[If( '${1:Condition}','${2:WhenTrue}','${3:WhenFalse}' )]\"" 
+	],
+	"description": "Returns a value based on the result of a condition."
+},
+"Task IISConfiguration": {
+	"scope": "json",
+	"prefix": "sif-IISConfiguration",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"IISConfiguration\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-IISConfigurationTask\",",
+	"\t\"Params\": {",
+		"\t\t\"SiteName\" : \"\",",
+		"\t\t\"ConfigPath\" : \"\",",
+		"\t\t\"Key\" : \"\",",
+		"\t\t\"Value\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Configures an IIS Configuration property"
+},
+"Task InsertXml": {
+	"scope": "json",
+	"prefix": "sif-InsertXml",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"InsertXml\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-InsertXmlTask\",",
+	"\t\"Params\": {",
+		"\t\t\"FilePath\" : \"\",",
+		"\t\t\"XPath\" : \"\",",
+		"\t\t\"Xml\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Inserts a new sub-document into an XML document in a file, appended as a child to one or many parents."
+},
+"Task InstallPSModule": {
+	"scope": "json",
+	"prefix": "sif-InstallPSModule",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"InstallPSModule\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-InstallPSModuleTask\",",
+	"\t\"Params\": {",
+		"\t\t\"ModuleName\" : \"\",",
+		"\t\t\"ModuleRequiredVersion\" : \"\",",
+		"\t\t\"RepositoryName\" : \"\",",
+		"\t\t\"RepositorySource\" : \"\",",
+		"\t\t\"ToSession\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Installs PowerShell module on a remote server."
+},
+"Task InstallSitecoreConfiguration": {
+	"scope": "json",
+	"prefix": "sif-InstallSitecoreConfiguration",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"InstallSitecoreConfiguration\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-InstallSitecoreConfigurationTask\",",
+	"\t\"Params\": {",
+		"\t\t\"ConfigurationParameters\" : \"\",",
+		"\t\t\"Session\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Installs Sitecore configuration to the remote server."
+},
+"Task IoXml": {
+	"scope": "json",
+	"prefix": "sif-IoXml",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"IoXml\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-IoXmlTask\",",
+	"\t\"Params\": {",
+		"\t\t\"RootDirectoryPath\" : \"\",",
+		"\t\t\"IoXmlPath\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Enables, Disables and Deletes configuration files as stated in an IOXML file"
+},
+"Function Join": {
+	"scope": "json",
+	"prefix": "sifc-Join",
+	"body": [
+		"\"[Join( '${1:Values}','${2:Delimiter}' )]\"" 
+	],
+	"description": "Joins a list of values as a single string"
+},
+"Function JoinPath": {
+	"scope": "json",
+	"prefix": "sifc-JoinPath",
+	"body": [
+		"\"[JoinPath( '${1:Values}' )]\"" 
+	],
+	"description": "Joins a list of values as a single path"
+},
+"Task ManageAppPool": {
+	"scope": "json",
+	"prefix": "sif-ManageAppPool",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"ManageAppPool\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-ManageAppPoolTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Name\" : \"\",",
+		"\t\t\"Action\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Task to support the Starting, Stopping and Restarting of an application pool."
+},
+"Task ManageService": {
+	"scope": "json",
+	"prefix": "sif-ManageService",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"ManageService\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-ManageServiceTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Name\" : \"\",",
+		"\t\t\"Status\" : \"\",",
+		"\t\t\"StartupType\" : \"\",",
+		"\t\t\"Description\" : \"\",",
+		"\t\t\"DisplayName\" : \"\",",
+		"\t\t\"PostDelay\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Manages changes to an existing service."
+},
+"Task ManageSolrConfig": {
+	"scope": "json",
+	"prefix": "sif-ManageSolrConfig",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"ManageSolrConfig\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-ManageSolrConfigTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Address\" : \"\",",
+		"\t\t\"CoreName\" : \"\",",
+		"\t\t\"Config\" : \"\",",
+		"\t\t\"RetryCount\" : \"\",",
+		"\t\t\"RetryDelay\" : \"\",",
+		"\t\t\"RequestTimeout\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Manages changes to the configuration of a core on an existing Solr instance."
+},
+"Task ManageSolrCore": {
+	"scope": "json",
+	"prefix": "sif-ManageSolrCore",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"ManageSolrCore\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-ManageSolrCoreTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Action\" : \"\",",
+		"\t\t\"Address\" : \"\",",
+		"\t\t\"Arguments\" : \"\",",
+		"\t\t\"RetryCount\" : \"\",",
+		"\t\t\"RetryDelay\" : \"\",",
+		"\t\t\"RequestTimeout\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Manages changes to the cores of an existing Solr instance."
+},
+"Task ManageSolrSchema": {
+	"scope": "json",
+	"prefix": "sif-ManageSolrSchema",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"ManageSolrSchema\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-ManageSolrSchemaTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Address\" : \"\",",
+		"\t\t\"Arguments\" : \"\",",
+		"\t\t\"Core\" : \"\",",
+		"\t\t\"RequestTimeout\" : \"\",",
+		"\t\t\"RetryCount\" : \"\",",
+		"\t\t\"RetryDelay\" : \"\",",
+		"\t\t\"Address\" : \"\",",
+		"\t\t\"ArgumentsFile\" : \"\",",
+		"\t\t\"Core\" : \"\",",
+		"\t\t\"RequestTimeout\" : \"\",",
+		"\t\t\"RetryCount\" : \"\",",
+		"\t\t\"RetryDelay\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Manages changes to the schema of an existing Solr core."
+},
+"Task ManageWebsite": {
+	"scope": "json",
+	"prefix": "sif-ManageWebsite",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"ManageWebsite\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-ManageWebsiteTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Name\" : \"\",",
+		"\t\t\"Action\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Task to support the starting and stopping of an IIS web site."
+},
+"Function Module": {
+	"scope": "json",
+	"prefix": "sifc-Module",
+	"body": [
+		"\"[Module( '${1:Name}','${2:Version}' )]\"" 
+	],
+	"description": "Determines if a module is present on the current system."
+},
+"Function NewPSCredential": {
+	"scope": "json",
+	"prefix": "sifc-NewPSCredential",
+	"body": [
+		"\"[NewPSCredential( '${1:Username}','${2:Password}' )]\"" 
+	],
+	"description": "Creates and returns a Powershell credential object."
+},
+"Task NewRootCertificate": {
+	"scope": "json",
+	"prefix": "sif-NewRootCertificate",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"NewRootCertificate\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-NewRootCertificateTask\",",
+	"\t\"Params\": {",
+		"\t\t\"DnsName\" : \"\",",
+		"\t\t\"StoreLocation\" : \"\",",
+		"\t\t\"FriendlyName\" : \"\",",
+		"\t\t\"Path\" : \"\",",
+		"\t\t\"Name\" : \"\",",
+		"\t\t\"Password\" : \"\",",
+		"\t\t\"IncludePrivateKey\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Creates a new Root Certificate Authority"
+},
+"Task NewSignedCertificate": {
+	"scope": "json",
+	"prefix": "sif-NewSignedCertificate",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"NewSignedCertificate\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-NewSignedCertificateTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Signer\" : \"\",",
+		"\t\t\"CertStoreLocation\" : \"\",",
+		"\t\t\"DnsName\" : \"\",",
+		"\t\t\"FriendlyName\" : \"\",",
+		"\t\t\"Path\" : \"\",",
+		"\t\t\"Name\" : \"\",",
+		"\t\t\"Password\" : \"\",",
+		"\t\t\"IncludePrivateKey\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Creates an SSL certificate for web hosting."
+},
+"Function Not": {
+	"scope": "json",
+	"prefix": "sifc-Not",
+	"body": [
+		"\"[Not( '${1:Value}' )]\"" 
+	],
+	"description": "Returns the logical opposite of the given value."
+},
+"Function Or": {
+	"scope": "json",
+	"prefix": "sifc-Or",
+	"body": [
+		"\"[Or( '${1:Values}' )]\"" 
+	],
+	"description": "Performs an OR operation on two or more values."
+},
+"Function RandomString": {
+	"scope": "json",
+	"prefix": "sifc-RandomString",
+	"body": [
+		"\"[RandomString( '${1:Length}','${2:EnforceComplexity}','${3:DisallowSpecial}','${4:DisallowCaps}','${5:DisallowLower}','${6:DisallowNumbers}' )]\"" 
+	],
+	"description": "Generates a random string of the specified length."
+},
+"Function ReadJson": {
+	"scope": "json",
+	"prefix": "sifc-ReadJson",
+	"body": [
+		"\"[ReadJson( '${1:Path}' )]\"" 
+	],
+	"description": "Reads the contents of a json file."
+},
+"Task RemoveAppPool": {
+	"scope": "json",
+	"prefix": "sif-RemoveAppPool",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"RemoveAppPool\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-RemoveAppPoolTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Name\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Removes an application pool from IIS."
+},
+"Task RemoveService": {
+	"scope": "json",
+	"prefix": "sif-RemoveService",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"RemoveService\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-RemoveServiceTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Name\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Removes a service from the machine."
+},
+"Task RemoveSqlDatabase": {
+	"scope": "json",
+	"prefix": "sif-RemoveSqlDatabase",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"RemoveSqlDatabase\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-RemoveSqlDatabaseTask\",",
+	"\t\"Params\": {",
+		"\t\t\"ServerName\" : \"\",",
+		"\t\t\"DatabaseNames\" : \"\",",
+		"\t\t\"UserName\" : \"\",",
+		"\t\t\"Password\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Removes given databases from the SQL Server."
+},
+"Task RemoveWebsite": {
+	"scope": "json",
+	"prefix": "sif-RemoveWebsite",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"RemoveWebsite\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-RemoveWebsiteTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Name\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Removes an IIS website."
+},
+"Task RemoveXml": {
+	"scope": "json",
+	"prefix": "sif-RemoveXml",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"RemoveXml\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-RemoveXmlTask\",",
+	"\t\"Params\": {",
+		"\t\t\"FilePath\" : \"\",",
+		"\t\t\"XPath\" : \"\",",
+		"\t\t\"IgnoreNoMatches\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Removes one or more nodes from an XML document in a file specified by an XPath."
+},
+"Function ResolveCertificatePath": {
+	"scope": "json",
+	"prefix": "sifc-ResolveCertificatePath",
+	"body": [
+		"\"[ResolveCertificatePath( '${1:CertificatePath}' )]\"" 
+	],
+	"description": "Supports resolving file system paths from Certificate store paths in configurations."
+},
+"Function ResolvePath": {
+	"scope": "json",
+	"prefix": "sifc-ResolvePath",
+	"body": [
+		"\"[ResolvePath( '${1:Path}' )]\"" 
+	],
+	"description": "Supports resolving file system paths in configurations."
+},
+"Function RestAuthentication": {
+	"scope": "json",
+	"prefix": "sifc-RestAuthentication",
+	"body": [
+		"\"[RestAuthentication( '${1:LoginUri}','${2:Username}','${3:Password}' )]\"" 
+	],
+	"description": "Performs authentication to the REST endpoint specified with `LoginUri` parameter by posting username as `Username` parameter and password as `Password`."
+},
+"Task SetXml": {
+	"scope": "json",
+	"prefix": "sif-SetXml",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"SetXml\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-SetXmlTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Attributes\" : \"\",",
+		"\t\t\"Element\" : \"\",",
+		"\t\t\"FilePath\" : \"\",",
+		"\t\t\"Value\" : \"\",",
+		"\t\t\"XPath\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Sets values in an XML document."
+},
+"Task SitecoreUrl": {
+	"scope": "json",
+	"prefix": "sif-SitecoreUrl",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"SitecoreUrl\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-SitecoreUrlTask\",",
+	"\t\"Params\": {",
+		"\t\t\"SitecoreInstanceRoot\" : \"\",",
+		"\t\t\"SitecoreActionPath\" : \"\",",
+		"\t\t\"Username\" : \"\",",
+		"\t\t\"Password\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Makes a request to s specific Sitecore Url."
+},
+"Function SqlConnectionString": {
+	"scope": "json",
+	"prefix": "sifc-SqlConnectionString",
+	"body": [
+		"\"[SqlConnectionString( '${1:Server}','${2:Database}','${3:UserName}','${4:Password}' )]\"" 
+	],
+	"description": "Creates a Sql connection string"
+},
+"Task TransformXmlDoc": {
+	"scope": "json",
+	"prefix": "sif-TransformXmlDoc",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"TransformXmlDoc\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-TransformXmlDocTask\",",
+	"\t\"Params\": {",
+		"\t\t\"RootDirectoryPath\" : \"\",",
+		"\t\t\"XdtDirectory\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Transforms xml files by providing XML Document Transform files"
+},
+"Task Unpack": {
+	"scope": "json",
+	"prefix": "sif-Unpack",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"Unpack\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-UnpackTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Source\" : \"\",",
+		"\t\t\"Destination\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Extracts an archive file to disk."
+},
+"Function ValidateCount": {
+	"scope": "json",
+	"prefix": "sifc-ValidateCount",
+	"body": [
+		"\"[ValidateCount( '${1:MinLength}','${2:MaxLength}','${3:Param}' )]\"" 
+	],
+	"description": "Validates that the parameter array count is in the specified range."
+},
+"Function ValidateLength": {
+	"scope": "json",
+	"prefix": "sifc-ValidateLength",
+	"body": [
+		"\"[ValidateLength( '${1:MinLength}','${2:MaxLength}','${3:Param}' )]\"" 
+	],
+	"description": "Validates that the parameter length falls in the range."
+},
+"Function ValidateNotNull": {
+	"scope": "json",
+	"prefix": "sifc-ValidateNotNull",
+	"body": [
+		"\"[ValidateNotNull( '${1:param}' )]\"" 
+	],
+	"description": "Verifies the argument is not null."
+},
+"Function ValidateNotNullOrEmpty": {
+	"scope": "json",
+	"prefix": "sifc-ValidateNotNullOrEmpty",
+	"body": [
+		"\"[ValidateNotNullOrEmpty( '${1:param}' )]\"" 
+	],
+	"description": "Validates that the argument is not null and is not an empty string or collection"
+},
+"Function ValidatePattern": {
+	"scope": "json",
+	"prefix": "sifc-ValidatePattern",
+	"body": [
+		"\"[ValidatePattern( '${1:Pattern}','${2:Param}','${3:IgnoreCase}' )]\"" 
+	],
+	"description": "Validates that parameter matches the RegexPattern."
+},
+"Function ValidateRange": {
+	"scope": "json",
+	"prefix": "sifc-ValidateRange",
+	"body": [
+		"\"[ValidateRange( '${1:Min}','${2:Max}','${3:Param}' )]\"" 
+	],
+	"description": "Validates that number parameter falls in the range specified by Min and Max."
+},
+"Function ValidateSet": {
+	"scope": "json",
+	"prefix": "sifc-ValidateSet",
+	"body": [
+		"\"[ValidateSet( '${1:Values}','${2:Param}','${3:IgnoreCase}' )]\"" 
+	],
+	"description": "Validates that parameter is present in a specified set."
+},
+"Task WebBinding": {
+	"scope": "json",
+	"prefix": "sif-WebBinding",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"WebBinding\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-WebBindingTask\",",
+	"\t\"Params\": {",
+		"\t\t\"SiteName\" : \"\",",
+		"\t\t\"Add\" : \"\",",
+		"\t\t\"Remove\" : \"\",",
+		"\t\t\"Update\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Creates, updates, and removes web bindings."
+},
+"Task WebDeploy": {
+	"scope": "json",
+	"prefix": "sif-WebDeploy",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"WebDeploy\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-WebDeployTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Verb\" : \"\",",
+		"\t\t\"Path\" : \"\",",
+		"\t\t\"Arguments\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Executes a Web Deploy command."
+},
+"Task WebRequest": {
+	"scope": "json",
+	"prefix": "sif-WebRequest",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"WebRequest\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-WebRequestTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Uri\" : \"\",",
+		"\t\t\"RetryCount\" : \"\",",
+		"\t\t\"RetryDelay\" : \"\",",
+		"\t\t\"RequestTimeout\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Requests a web page, with optional retries"
+},
+"Task WebsiteClientCert": {
+	"scope": "json",
+	"prefix": "sif-WebsiteClientCert",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"WebsiteClientCert\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-WebsiteClientCertTask\",",
+	"\t\"Params\": {",
+		"\t\t\"SiteName\" : \"\",",
+		"\t\t\"Setting\" : \"\",",
+		"\t\t\"Ssl\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Configures client certificate settings for a website."
+},
+"Task WebSite": {
+	"scope": "json",
+	"prefix": "sif-WebSite",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"WebSite\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-WebSiteTask\",",
+	"\t\"Params\": {",
+		"\t\t\"Name\" : \"\",",
+		"\t\t\"ApplicationPool\" : \"\",",
+		"\t\t\"PhysicalPath\" : \"\",",
+		"\t\t\"Hostname\" : \"\",",
+		"\t\t\"Port\" : \"\",",
+		"\t\t\"IPAddress\" : \"\",",
+		"\t\t\"Properties\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Task to support the creation and modification of an IIS website."
+},
+"Function WindowsFeature": {
+	"scope": "json",
+	"prefix": "sifc-WindowsFeature",
+	"body": [
+		"\"[WindowsFeature( '${1:Name}' )]\"" 
+	],
+	"description": "Returns if a Windows Feature is enabled or not."
+}}
