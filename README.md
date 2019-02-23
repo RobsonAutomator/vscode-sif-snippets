@@ -4,6 +4,7 @@ Sitecore Installation Framework snippets.
 | Prefix  | Description  | 
 |---|---|
 | sif  | Creates an empty configuration for SIF  |
+| sif-inc | Inserts includes section |
 | sif-p | Inserts an empty parameter  |
 | sif-pd  | Inserts an empty parameter with default value  |
 | sif-pr | Inserts an empty parameter with a reference |
