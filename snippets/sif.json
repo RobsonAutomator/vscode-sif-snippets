@@ -80,7 +80,7 @@
     },
 "Task AddWebFeatureSSL": {
 	"scope": "json",
-	"prefix": "sif-AddWebFeatureSSL",
+	"prefix": "sift-AddWebFeatureSSL",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"AddWebFeatureSSL\",",
@@ -111,7 +111,7 @@
 },
 "Task AppPool": {
 	"scope": "json",
-	"prefix": "sif-AppPool",
+	"prefix": "sift-AppPool",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"AppPool\",",
@@ -135,7 +135,7 @@
 },
 "Task Command": {
 	"scope": "json",
-	"prefix": "sif-Command",
+	"prefix": "sift-Command",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"Command\",",
@@ -160,7 +160,7 @@
 },
 "Task Copy": {
 	"scope": "json",
-	"prefix": "sif-Copy",
+	"prefix": "sift-Copy",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"Copy\",",
@@ -176,7 +176,7 @@
 },
 "Task CreateService": {
 	"scope": "json",
-	"prefix": "sif-CreateService",
+	"prefix": "sift-CreateService",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"CreateService\",",
@@ -196,7 +196,7 @@
 },
 "Task DownloadFile": {
 	"scope": "json",
-	"prefix": "sif-DownloadFile",
+	"prefix": "sift-DownloadFile",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"DownloadFile\",",
@@ -214,7 +214,7 @@
 },
 "Task EnsurePath": {
 	"scope": "json",
-	"prefix": "sif-EnsurePath",
+	"prefix": "sift-EnsurePath",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"EnsurePath\",",
@@ -246,7 +246,7 @@
 },
 "Task FilePermissions": {
 	"scope": "json",
-	"prefix": "sif-FilePermissions",
+	"prefix": "sift-FilePermissions",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"FilePermissions\",",
@@ -278,7 +278,7 @@
 },
 "Task HostHeader": {
 	"scope": "json",
-	"prefix": "sif-HostHeader",
+	"prefix": "sift-HostHeader",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"HostHeader\",",
@@ -295,7 +295,7 @@
 },
 "Task HttpRequest": {
 	"scope": "json",
-	"prefix": "sif-HttpRequest",
+	"prefix": "sift-HttpRequest",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"HttpRequest\",",
@@ -322,7 +322,7 @@
 },
 "Task IISConfiguration": {
 	"scope": "json",
-	"prefix": "sif-IISConfiguration",
+	"prefix": "sift-IISConfiguration",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"IISConfiguration\",",
@@ -340,7 +340,7 @@
 },
 "Task InsertXml": {
 	"scope": "json",
-	"prefix": "sif-InsertXml",
+	"prefix": "sift-InsertXml",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"InsertXml\",",
@@ -357,7 +357,7 @@
 },
 "Task InstallPSModule": {
 	"scope": "json",
-	"prefix": "sif-InstallPSModule",
+	"prefix": "sift-InstallPSModule",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"InstallPSModule\",",
@@ -376,7 +376,7 @@
 },
 "Task InstallSitecoreConfiguration": {
 	"scope": "json",
-	"prefix": "sif-InstallSitecoreConfiguration",
+	"prefix": "sift-InstallSitecoreConfiguration",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"InstallSitecoreConfiguration\",",
@@ -392,7 +392,7 @@
 },
 "Task IoXml": {
 	"scope": "json",
-	"prefix": "sif-IoXml",
+	"prefix": "sift-IoXml",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"IoXml\",",
@@ -424,7 +424,7 @@
 },
 "Task ManageAppPool": {
 	"scope": "json",
-	"prefix": "sif-ManageAppPool",
+	"prefix": "sift-ManageAppPool",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"ManageAppPool\",",
@@ -440,7 +440,7 @@
 },
 "Task ManageService": {
 	"scope": "json",
-	"prefix": "sif-ManageService",
+	"prefix": "sift-ManageService",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"ManageService\",",
@@ -460,7 +460,7 @@
 },
 "Task ManageSolrConfig": {
 	"scope": "json",
-	"prefix": "sif-ManageSolrConfig",
+	"prefix": "sift-ManageSolrConfig",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"ManageSolrConfig\",",
@@ -480,7 +480,7 @@
 },
 "Task ManageSolrCore": {
 	"scope": "json",
-	"prefix": "sif-ManageSolrCore",
+	"prefix": "sift-ManageSolrCore",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"ManageSolrCore\",",
@@ -500,7 +500,7 @@
 },
 "Task ManageSolrSchema": {
 	"scope": "json",
-	"prefix": "sif-ManageSolrSchema",
+	"prefix": "sift-ManageSolrSchema",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"ManageSolrSchema\",",
@@ -526,7 +526,7 @@
 },
 "Task ManageWebsite": {
 	"scope": "json",
-	"prefix": "sif-ManageWebsite",
+	"prefix": "sift-ManageWebsite",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"ManageWebsite\",",
@@ -558,7 +558,7 @@
 },
 "Task NewRootCertificate": {
 	"scope": "json",
-	"prefix": "sif-NewRootCertificate",
+	"prefix": "sift-NewRootCertificate",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"NewRootCertificate\",",
@@ -579,7 +579,7 @@
 },
 "Task NewSignedCertificate": {
 	"scope": "json",
-	"prefix": "sif-NewSignedCertificate",
+	"prefix": "sift-NewSignedCertificate",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"NewSignedCertificate\",",
@@ -633,7 +633,7 @@
 },
 "Task RemoveAppPool": {
 	"scope": "json",
-	"prefix": "sif-RemoveAppPool",
+	"prefix": "sift-RemoveAppPool",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"RemoveAppPool\",",
@@ -648,7 +648,7 @@
 },
 "Task RemoveService": {
 	"scope": "json",
-	"prefix": "sif-RemoveService",
+	"prefix": "sift-RemoveService",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"RemoveService\",",
@@ -663,7 +663,7 @@
 },
 "Task RemoveSqlDatabase": {
 	"scope": "json",
-	"prefix": "sif-RemoveSqlDatabase",
+	"prefix": "sift-RemoveSqlDatabase",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"RemoveSqlDatabase\",",
@@ -681,7 +681,7 @@
 },
 "Task RemoveWebsite": {
 	"scope": "json",
-	"prefix": "sif-RemoveWebsite",
+	"prefix": "sift-RemoveWebsite",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"RemoveWebsite\",",
@@ -696,7 +696,7 @@
 },
 "Task RemoveXml": {
 	"scope": "json",
-	"prefix": "sif-RemoveXml",
+	"prefix": "sift-RemoveXml",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"RemoveXml\",",
@@ -737,7 +737,7 @@
 },
 "Task SetXml": {
 	"scope": "json",
-	"prefix": "sif-SetXml",
+	"prefix": "sift-SetXml",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"SetXml\",",
@@ -756,7 +756,7 @@
 },
 "Task SitecoreUrl": {
 	"scope": "json",
-	"prefix": "sif-SitecoreUrl",
+	"prefix": "sift-SitecoreUrl",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"SitecoreUrl\",",
@@ -782,7 +782,7 @@
 },
 "Task TransformXmlDoc": {
 	"scope": "json",
-	"prefix": "sif-TransformXmlDoc",
+	"prefix": "sift-TransformXmlDoc",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"TransformXmlDoc\",",
@@ -798,7 +798,7 @@
 },
 "Task Unpack": {
 	"scope": "json",
-	"prefix": "sif-Unpack",
+	"prefix": "sift-Unpack",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"Unpack\",",
@@ -870,7 +870,7 @@
 },
 "Task WebBinding": {
 	"scope": "json",
-	"prefix": "sif-WebBinding",
+	"prefix": "sift-WebBinding",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"WebBinding\",",
@@ -888,7 +888,7 @@
 },
 "Task WebDeploy": {
 	"scope": "json",
-	"prefix": "sif-WebDeploy",
+	"prefix": "sift-WebDeploy",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"WebDeploy\",",
@@ -905,7 +905,7 @@
 },
 "Task WebRequest": {
 	"scope": "json",
-	"prefix": "sif-WebRequest",
+	"prefix": "sift-WebRequest",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"WebRequest\",",
@@ -923,7 +923,7 @@
 },
 "Task WebsiteClientCert": {
 	"scope": "json",
-	"prefix": "sif-WebsiteClientCert",
+	"prefix": "sift-WebsiteClientCert",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"WebsiteClientCert\",",
@@ -940,7 +940,7 @@
 },
 "Task WebSite": {
 	"scope": "json",
-	"prefix": "sif-WebSite",
+	"prefix": "sift-WebSite",
 	"body": [
 	"\"${1:TaskName}\": {",
 	"\t\"Type\": \"WebSite\",",
