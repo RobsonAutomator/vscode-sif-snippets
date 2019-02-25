@@ -1,5 +1,6 @@
 # vscode-sif-snippets
 Sitecore Installation Framework snippets.
+Tasks and config function snippets are for SIF 2.0
 
 | Prefix  | Description  | 
 |---|---|
