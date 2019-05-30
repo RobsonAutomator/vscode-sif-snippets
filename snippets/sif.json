@@ -73,7 +73,7 @@
 				"\t\"Type\": \"\",",
 				"\t\"Params\": {",
 				"\t\t\"\" : \"\"",
-				"\t},",
+				"\t}",
 			"}"
 		],
 		"description": "Creates a task."
