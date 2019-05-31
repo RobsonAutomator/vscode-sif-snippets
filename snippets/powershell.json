@@ -1,0 +1,20 @@
+{
+	"Run SIF script": {
+		"prefix": "sif-run",
+		"scope" : "powershell",
+		"body": [
+			"#requires -RunAsAdministrator ",
+            "#requires -Version 5.1",
+            "#Modify required version, and uncomment",
+            "#Import-Module SitecoreInstallFramework -RequiredVersion 2.0.0",
+			"",
+			"Set-Location -Path \\$PSScriptRoot",
+			"",
+			"$parameters = @{",
+			"    Path = \"$CLIPBOARD\"",
+			"}",
+			"Install-SitecoreConfiguration  @parameters -Verbose"
+		],
+		"description": "Run SIF script"
+	}
+}

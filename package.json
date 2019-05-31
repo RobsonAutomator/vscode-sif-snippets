@@ -1,8 +1,8 @@
 {
     "name": "sif-snippets",
     "displayName": "SIF Snippets",
-    "description": "Sitecore Installation Framework snippets by Robert Senktas",
-    "version": "0.0.7",
+    "description": "Sitecore Installation Framework 2.1.0 snippets by Robert Senktas",
+    "version": "0.0.8",
     "icon": "assets/sif-six.png",
     "publisher": "robsonautomator",
     "engines": {
@@ -27,6 +27,10 @@
 			{
                 "language": "json",
                 "path": "./snippets/sif.json"
+            },
+			{
+                "language": "powershell",
+                "path": "./snippets/powershell.json"
             }
         ]
     }

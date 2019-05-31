@@ -1,4 +1,5 @@
 {
+
 "Empty SIF Json": {
 		"scope": "json",
 		"prefix": "sif",
@@ -87,7 +88,6 @@
 	"\t\"Description\": \"\",",
 	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-AddWebFeatureSSLTask\",",
 	"\t\"Params\": {",
-		"\t\t\"SiteName\" : \"\",",
 		"\t\t\"HostName\" : \"\",",
 		"\t\t\"ClientCertLocation\" : \"\",",
 		"\t\t\"OutputDirectory\" : \"\",",
@@ -95,7 +95,8 @@
 		"\t\t\"Port\" : \"\",",
 		"\t\t\"RootCertLocation\" : \"\",",
 		"\t\t\"RootCertName\" : \"\",",
-		"\t\t\"RootDnsName\" : \"\"",
+		"\t\t\"RootDnsName\" : \"\",",
+		"\t\t\"SiteName\" : \"\"",
 	"\t}",
 	"}"
 	],
@@ -437,6 +438,22 @@
 	"}"
 	],
 	"description": "Task to support the Starting, Stopping and Restarting of an application pool."
+},
+"Task ManageKeyStorage": {
+	"scope": "json",
+	"prefix": "sift-ManageKeyStorage",
+	"body": [
+	"\"${1:TaskName}\": {",
+	"\t\"Type\": \"ManageKeyStorage\",",
+	"\t\"Description\": \"\",",
+	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-ManageKeyStorageTask\",",
+	"\t\"Params\": {",
+		"\t\t\"AppPoolName\" : \"\",",
+		"\t\t\"Action\" : \"\"",
+	"\t}",
+	"}"
+	],
+	"description": "Manages user key storage in HKLM registry. Required when keys cannot be stored in user profile."
 },
 "Task ManageService": {
 	"scope": "json",
