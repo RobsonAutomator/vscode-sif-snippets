@@ -14,10 +14,12 @@ Tasks and config function snippets are for SIF 2.2.0
 | sift-{Task Name} | Inserts specified task |
 | sif-run | Inserts a Powershell snippet for run SIF configuration file |
 
-# What's new in version 0.0.9?
-sifc-If - this function is deprecated
-sift-DownloadFile - new parameters Hash and Algorithm
-sifc-Split - new function to split strings
+# What's new in version 2.2.0?
+SIF Snippets version is now align to SIF version.
 
-
+| Prefix  | Description  | 
+|---|---|
+|sifc-If | this function is deprecated |
+|sift-DownloadFile | new parameters Hash and Algorithm |
+|sifc-Split | new function to split strings |
 

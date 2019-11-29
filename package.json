@@ -2,7 +2,7 @@
     "name": "sif-snippets",
     "displayName": "SIF Snippets",
     "description": "Sitecore Installation Framework 2.2.0 snippets by Robert Senktas",
-    "version": "0.0.9",
+    "version": "2.2.0",
     "icon": "assets/sif-six.png",
     "publisher": "robsonautomator",
     "engines": {
