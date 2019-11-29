@@ -1,6 +1,6 @@
 # vscode-sif-snippets
 Sitecore Installation Framework snippets.
-Tasks and config function snippets are for SIF 2.1.0
+Tasks and config function snippets are for SIF 2.2.0
 
 | Prefix  | Description  | 
 |---|---|
@@ -13,6 +13,11 @@ Tasks and config function snippets are for SIF 2.1.0
 | sifc-{Configuration Function Name} | Inserts specified configuration function |
 | sift-{Task Name} | Inserts specified task |
 | sif-run | Inserts a Powershell snippet for run SIF configuration file |
+
+# What's new in version 0.0.9?
+sifc-If - this function is deprecated
+sift-DownloadFile - new parameters Hash and Algorithm
+sifc-Split - new function to split strings
 
 
 

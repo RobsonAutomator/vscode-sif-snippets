@@ -207,7 +207,9 @@
 		"\t\t\"SourceUri\" : \"\",",
 		"\t\t\"DestinationPath\" : \"\",",
 		"\t\t\"LoginSession\" : \"\",",
-		"\t\t\"Credentials\" : \"\"",
+		"\t\t\"Credentials\" : \"\",",
+		"\t\t\"Hash\" : \"\",",
+		"\t\t\"Algorithm\" : \"\"",
 	"\t}",
 	"}"
 	],
@@ -319,7 +321,7 @@
 	"body": [
 		"\"[If( '${1:Condition}','${2:WhenTrue}','${3:WhenFalse}' )]\"" 
 	],
-	"description": "Returns a value based on the result of a condition."
+	"description": "This config function has been deprecated and will not be used by SIF. It will be removed in a future version."
 },
 "Task IISConfiguration": {
 	"scope": "json",
@@ -433,7 +435,8 @@
 	"\t\"Help\": \"http://lets-share.senktas.net/sif-explorer.html?select=Invoke-ManageAppPoolTask\",",
 	"\t\"Params\": {",
 		"\t\t\"Name\" : \"\",",
-		"\t\t\"Action\" : \"\"",
+		"\t\t\"Action\" : \"\",",
+		"\t\t\"Timeout\" : \"\"",
 	"\t}",
 	"}"
 	],
@@ -788,6 +791,14 @@
 	"}"
 	],
 	"description": "Makes a request to s specific Sitecore Url."
+},
+"Function Split": {
+	"scope": "json",
+	"prefix": "sifc-Split",
+	"body": [
+		"\"[Split( '${1:String}','${2:Characters}','${3:ElementsToReturn}' )]\"" 
+	],
+	"description": "Splits a string."
 },
 "Function SqlConnectionString": {
 	"scope": "json",
